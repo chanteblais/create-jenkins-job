@@ -11,7 +11,7 @@
       <userRemoteConfigs>
         <hudson.plugins.git.UserRemoteConfig>
           <url>{{ GIT_URL }}</url>
-          <credentialsId>github-jenkins-eks</credentialsId>
+          <credentialsId>github-credentials</credentialsId>
         </hudson.plugins.git.UserRemoteConfig>
       </userRemoteConfigs>
       <branches>
@@ -27,7 +27,7 @@
         </hudson.plugins.git.extensions.impl.MessageExclusion>
       </extensions>
     </scm>
-    <scriptPath>ci-cd/{{ SCRIPT_PREFIX }}Jenkinsfile</scriptPath>
+    <scriptPath>Jenkinsfile</scriptPath>
     <lightweight>false</lightweight>
   </definition>
   <triggers/>
