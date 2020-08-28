@@ -1,0 +1,43 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.11"/>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.76">
+    <scm class="hudson.plugins.git.GitSCM" plugin="git@3.12.1">
+      <configVersion>2</configVersion>
+      <userRemoteConfigs>
+        <hudson.plugins.git.UserRemoteConfig>
+<<<<<<< HEAD
+          <url>git@github.com:eastsidegames/esg-logstash.git</url>
+=======
+          <url>git@github.com-esg:eastsidegames/devops-default-k8s-dpy.git</url>
+>>>>>>> e8855709a0c7886b864d5199a7d635df2052b38f
+          <credentialsId>github-jenkins-eks</credentialsId>
+        </hudson.plugins.git.UserRemoteConfig>
+      </userRemoteConfigs>
+      <branches>
+        <hudson.plugins.git.BranchSpec>
+          <name>refs/heads/dev</name>
+        </hudson.plugins.git.BranchSpec>
+      </branches>
+      <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+      <submoduleCfg class="list"/>
+      <extensions>
+        <hudson.plugins.git.extensions.impl.MessageExclusion>
+          <excludedMessage>(?s).*SKIPJENKINS.*</excludedMessage>
+        </hudson.plugins.git.extensions.impl.MessageExclusion>
+      </extensions>
+    </scm>
+<<<<<<< HEAD
+    <scriptPath>ci-cd/Jenkinsfile</scriptPath>
+=======
+    <scriptPath>ci-cd/del-Jenkinsfile</scriptPath>
+>>>>>>> e8855709a0c7886b864d5199a7d635df2052b38f
+    <lightweight>false</lightweight>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
