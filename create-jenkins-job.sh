@@ -1,9 +1,6 @@
 #!/bin/bash
-<<<<<<< HEAD
-=======
 source properties.env
 source secrets-exp.env || echo Error: missing secrets.env. Please create this file and try again.
->>>>>>> e8855709a0c7886b864d5199a7d635df2052b38f
 
 if [[ $3 == 'gaia' ]]; then
   echo "Creating project in Gaia"
@@ -23,10 +20,6 @@ JOB_CONFIG=`cat "/Users/chanteblais/GitHub_Projects/create-jenkins-job/templates
 echo "$JOB_CONFIG" > job-config.xml
 echo $GIT_URL
 
-<<<<<<< HEAD
-java -jar ~/JenkinsGlobal/jenkins-cli.jar -s $JENKINS_URL \
-=======
 java -jar $JENKINS_CLI_PATH -s $JENKINS_URL \
->>>>>>> e8855709a0c7886b864d5199a7d635df2052b38f
 -auth $J_USERNAME:$J_TOKEN \
 create-job $1 < ./job-config.xml
