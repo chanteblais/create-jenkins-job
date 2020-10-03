@@ -2,9 +2,9 @@
 This repo is for creating jenkins jobs using the jenkins CLI   
 
 ## Requirements
-Jenkins CLI Client: https://jenkins-cjd-exp.esgstud.io/jnlpJars/jenkins-cli.jar  
+Jenkins CLI Client: https://JENKINS_URL/jnlpJars/jenkins-cli.jar  
 Add the jar to the following directory: ~/JenkinsGlobal/jenkins-cli.jar  
-Jenkins API token: https://jenkins-cjd-exp.esgstud.io/me/configure (Requires a jenkins login).  
+Jenkins API token: https://JENKINS_URL.io/me/configure (Requires a jenkins login).  
 
 ## Creating a Job  
 Rename `secrets-example.env` and add your credentials.  
